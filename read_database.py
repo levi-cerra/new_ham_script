@@ -3,7 +3,7 @@ from datetime import datetime as dt
 
 # Inputs for the code
 cutoff_date = '01/01/2024'
-zipcode_file = 'allegheny_zips.txt'
+zipcode_file = 'zips_carnegie_25_miles.txt'
 
 
 
@@ -12,16 +12,15 @@ def parse_file_line_data(current_line):
     data = ''
     for current_char in current_line:
         if current_char == '|':
-            if data != '':
-                line_data_list.append(data)
-                data = ''
+            line_data_list.append(data)
+            data = ''
         elif current_char != '|':
             data = data + current_char
     return line_data_list
 
 
 # Read zip code file in as list
-print('Reading zip list')
+print('Reading ' + zipcode_file)
 zip_list = []
 with open(zipcode_file, 'r') as file:
     for line in file:
@@ -36,11 +35,8 @@ with open(file_path, 'r') as file:
     for line in file:
         current_line = line.strip()
         line_data_list = parse_file_line_data(current_line)
-        #try:
-        for i in line_data_list:
-            if len(i) == 5 and i.isnumeric:
-                if i in zip_list:
-                    EN_list.append(line_data_list)
+        if line_data_list[18] in zip_list:
+            EN_list.append(line_data_list)
 
 
 # Read the HS.dat file into a list of lists
@@ -58,11 +54,11 @@ with open(file_path, 'r') as file:
         line_data_list = parse_file_line_data(current_line)
         i = i + 1
         try:
-            a = dt.strptime(line_data_list[3], '%m/%d/%Y')
+            a = dt.strptime(line_data_list[4], '%m/%d/%Y')
         except:
             print('HS.dat - No callsign on line: ' + str(i))
         try:
-            if line_data_list[4] == 'SYSGRT' and a >= b:
+            if line_data_list[5] == 'SYSGRT' and a >= b:
                 HS_list.append(line_data_list)
         except:
             print('HS.dat - No callsign on line: ' + str(i))
@@ -76,17 +72,57 @@ for HS_people in HS_list:
             final_list.append(HS_people)
             final_list.append(EN_people)
 
-print()
-print('Final List Length: ' + str(len(final_list)))
 
+final_list_len = str(len(final_list))
 print()
-print('Writing text to output text file')
+print('Final List Length: ' + final_list_len)
+
+
+list_output_file = 'results_list_output.txt'
+print()
+print('Writing list text to ' + list_output_file)
 counter = 0
-with open('output.txt', 'w') as f:
+with open(list_output_file, 'w') as f:
     for line in final_list:
         counter = counter + 1
         f.write(f"{line}\n")
         if (counter % 2) == 0:
+            f.write(f"\n")
+
+
+address_output_file = 'address_list_output.txt'
+print()
+print('Writing addresses to ' + address_output_file)
+counter2 = 0
+with open(address_output_file, 'w') as f:
+    # Header
+    num_of_results_str = "Number of Results from Query: " + final_list_len
+    f.write(f"Address List Output File\n")
+    f.write(f"{num_of_results_str}\n")
+    f.write(f"-----------------------------------\n")
+    f.write(f"\n")
+    #Addresses
+    for line in final_list:
+        counter2 = counter2 + 1
+        if (counter2 % 2) == 0:
+            first = line[8]
+            middle = line[9]
+            last = line[10]
+            if middle == '':
+                full_name = first + ' ' + last
+            else:
+                full_name = first + ' ' + middle + '. ' + last
+            address_line = line[15]
+            PO_box_num = line[19]
+            if address_line == '':
+                address_line = 'PO Box #' + PO_box_num
+            city = line[16]
+            state = line[17]
+            zip_code = line[18]
+            csz = city + ', ' + state + ' ' + zip_code
+            f.write(f"{full_name}\n")
+            f.write(f"{address_line}\n")
+            f.write(f"{csz}\n")
             f.write(f"\n")
 
 print()

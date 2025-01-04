@@ -1,6 +1,9 @@
 This website has the data that needs to be downloaded:
 https://www.fcc.gov/uls/transactions/daily-weekly
 
+This website has an easy way to get zip codes in an area:
+https://www.unitedstateszipcodes.org/zip-code-radius-map.php
+
 
 Scroll down to weekly and click the Amateur Radio Service "Licenses"
 
