@@ -3,7 +3,7 @@ from datetime import datetime as dt
 
 # Inputs for the code
 cutoff_date = '01/01/2024'
-zipcode_file = 'zips_carnegie_25_miles.txt'
+zipcode_file = 'zipcode_files\zips_carnegie_25_miles.txt'
 
 
 
@@ -20,17 +20,17 @@ def parse_file_line_data(current_line):
 
 
 # Read zip code file in as list
-print('Reading ' + zipcode_file)
+print('Reading: ' + zipcode_file)
 zip_list = []
 with open(zipcode_file, 'r') as file:
     for line in file:
         zip_list.append(line.strip())
 
 # Read the EN.dat file into a list of lists
+file_path = 'database_files\EN.dat'
 print()
-print('Reading EN.dat')
+print('Reading: ' + file_path)
 EN_list = []
-file_path = 'EN.dat'
 with open(file_path, 'r') as file:
     for line in file:
         current_line = line.strip()
@@ -40,10 +40,10 @@ with open(file_path, 'r') as file:
 
 
 # Read the HS.dat file into a list of lists
+file_path = 'database_files\HS.dat'
 print()
-print('Reading HS.dat')
+print('Reading: ' + file_path)
 HS_list = []
-file_path = 'HS.dat'
 b = dt.strptime(cutoff_date, '%m/%d/%Y')
 i = 1
 with open(file_path, 'r') as file:
@@ -53,15 +53,9 @@ with open(file_path, 'r') as file:
         #print(current_line)
         line_data_list = parse_file_line_data(current_line)
         i = i + 1
-        try:
-            a = dt.strptime(line_data_list[4], '%m/%d/%Y')
-        except:
-            print('HS.dat - No callsign on line: ' + str(i))
-        try:
-            if line_data_list[5] == 'SYSGRT' and a >= b:
-                HS_list.append(line_data_list)
-        except:
-            print('HS.dat - No callsign on line: ' + str(i))
+        a = dt.strptime(line_data_list[4], '%m/%d/%Y')
+        if line_data_list[5] == 'SYSGRT' and a >= b:
+            HS_list.append(line_data_list)
 
 print()
 print('Compiling Final List of Hams')
@@ -78,7 +72,7 @@ print()
 print('Final List Length: ' + final_list_len)
 
 
-list_output_file = 'results_list_output.txt'
+list_output_file = 'outputs\\results_list_output.txt'
 print()
 print('Writing list text to ' + list_output_file)
 counter = 0
@@ -90,7 +84,7 @@ with open(list_output_file, 'w') as f:
             f.write(f"\n")
 
 
-address_output_file = 'address_list_output.txt'
+address_output_file = 'outputs\\address_list_output.txt'
 print()
 print('Writing addresses to ' + address_output_file)
 counter2 = 0
