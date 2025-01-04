@@ -81,9 +81,13 @@ print('Final List Length: ' + str(len(final_list)))
 
 print()
 print('Writing text to output text file')
+counter = 0
 with open('output.txt', 'w') as f:
     for line in final_list:
+        counter = counter + 1
         f.write(f"{line}\n")
+        if (counter % 2) == 0:
+            f.write(f"\n")
 
 print()
 print('Process Complete')
