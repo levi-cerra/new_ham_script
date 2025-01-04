@@ -2,391 +2,391 @@ Address List Output File
 Number of Results from Query: 194
 -----------------------------------
 
-Spencer Greenholt
+Spencer Greenholt (KC3YHD)
 104 Farmcrest Dr
 Oakdale, PA 15071
 
-Matthew E. Styche
+Matthew E. Styche (KC3YHN)
 385 HENDERSON RD
 Buena Vista, PA 15018
 
-Jason Bodkin
+Jason Bodkin (KC3YHO)
 2377 BELLWOOD DR
 PITTSBURGH, PA 15237
 
-Nathan Link
+Nathan Link (KC3YHQ)
 7523 Sierra Drive
 Irwin, PA 15642
 
-Aaron J. Cooper
+Aaron J. Cooper (KC3YIC)
 333 Isabella Ave
 North Charleroi, PA 15022
 
-CK Sapos
+CK Sapos (KC3YIU)
 PO Box #24
 McKeesport, PA 15135
 
-Tyler R. Neely
+Tyler R. Neely (KC3YKL)
 1622 Restover Rd
 Belle Vernon, PA 15012
 
-Richard W. Ashbaugh
+Richard W. Ashbaugh (KC3YLP)
 1132 Vance Ave
 Coraopolis, PA 15108
 
-Megan West
+Megan West (KC3YMB)
 3012 Woodfield Dr
 Aliquippa, PA 15001
 
-James D. Henry
+James D. Henry (KC3YMC)
 529 Rich Hill Rd
 Cheswick, PA 15024
 
-Ethan J. Fontana
+Ethan J. Fontana (KC3YMD)
 9822 Presidential Dr Apt 308
 Allison Park, PA 15101
 
-John D. Grumbine
+John D. Grumbine (KC3YPA)
 134 Hoodridge Dr
 Pittsburgh, PA 15228
 
-Michael A. Johns
+Michael A. Johns (KC3YPD)
 1620 Butler Rd
 Springdale, PA 15144
 
-Brian Gonzalez
+Brian Gonzalez (KC3YQE)
 201 Pinecrest Dr
 Pittsburgh, PA 15237
 
-Tim McCullough
+Tim McCullough (KC3YQN)
 208 COBBLESTONE DR
 Burgettstown, PA 15021
 
-Emily S. Keene
+Emily S. Keene (KC3YQO)
 195 Falls Church Rd
 Imperial, PA 15126
 
-William Boggs
+William Boggs (KC3YQP)
 1095 Windy Oak Dr
 Pittsburgh, PA 15239
 
-Eric Goucher
+Eric Goucher (KC3YRM)
 852 HILLCREST CIR
 Wexford, PA 15090
 
-Christian Wildberg
+Christian Wildberg (KC3YSN)
 1118 N Negzey Ave
 Pittsburgh, PA 15206
 
-Matthew K. Kwee
+Matthew K. Kwee (KC3YTL)
 32 Fox Pointe Dr
 Pittsburgh, PA 15238
 
-Andrew C. Cuonzo
+Andrew C. Cuonzo (KC3YTM)
 5621 Woodmont St
 Pittsburgh, PA 15217
 
-Pedro Rocha Cachim
+Pedro Rocha Cachim (KC3YTN)
 5806 Howe St
 Pittsburgh, PA 15232
 
-Nathanael Yeager
+Nathanael Yeager (KC3YTP)
 101 N Dithridge St Apt 620
 Pittsburgh, PA 15213
 
-Yufei Shi
+Yufei Shi (KC3YTQ)
 4500 Centre Ave Unit 1416
 Pittsburgh, PA 15213
 
-Siyuan Li
+Siyuan Li (KC3YTS)
 6345 Morrowfield Ave
 Pittsburgh, PA 15217
 
-David B. Lessure
+David B. Lessure (KC3YTT)
 5621 Woodmont St
 Pittsburgh, PA 15217
 
-Jerome E. Galloway
+Jerome E. Galloway (KC3YTW)
 725 North Ave
 Pittsburgh, PA 15221
 
-Thomas J. McLaughlin
+Thomas J. McLaughlin (KC3YTX)
 650 VINCENT DR
 Irwin, PA 15642
 
-Xavier Gaefke
+Xavier Gaefke (KC3YUB)
 1219 Braun Rd
 Bethel Park, PA 15102
 
-Zachary Gelman
+Zachary Gelman (KC3YUD)
 5621 Woodmont St
 Pittsburgh, PA 15217
 
-William R. Bennett
+William R. Bennett (KC3YUG)
 3215 Piedmont Ave
 Pittsburgh, PA 15216
 
-Erick M. Podurgiel
+Erick M. Podurgiel (KC3YUU)
 421 Stafford Ave
 Bridgeville, PA 15017
 
-Brian K. Loftus
+Brian K. Loftus (KC3YUZ)
 5156 Prince Phillip Ct
 Gibsonia, PA 15044
 
-Alexis L. Evans
+Alexis L. Evans (KC3YVA)
 5156 Prince Phillips Ct
 Gibsonia, PA 15044
 
-Kevin J. Podurgiel
+Kevin J. Podurgiel (KC3YVC)
 421 Stafford Ave
 Bridgeville, PA 15017
 
-Sean C. Caho
+Sean C. Caho (KC3YVI)
 1838 Shaw Ave
 Pittsburgh, PA 15217
 
-Glenn G. Kinest
+Glenn G. Kinest (KC3YWE)
 450 Parkridge Dr
 Bethel Park, PA 15102
 
-Michael E. Hampshire
+Michael E. Hampshire (KC3YWZ)
 613 Winterberry Rd
 Monroeville, PA 15146
 
-Kevin A. Wright
+Kevin A. Wright (KC3YXD)
 825 Peach Alley
 Glassport, PA 15045
 
-Jacob M. Joseph
+Jacob M. Joseph (AC3LY)
 5000 Forbes Ave
 Pittsburgh, PA 15213
 
-Brian Gonzalez
+Brian Gonzalez (AC3MD)
 201 Pinecrest Dr
 Pittsburgh, PA 15237
 
-Mark A. Sebeck
+Mark A. Sebeck (KC3YYF)
 245 Allegheny Ave
 Emsworth, PA 15202
 
-David G. Andersen
+David G. Andersen (AC3ME)
 5000 Forbes Ave Gates Center For CS
 Pittsburgh, PA 15213
 
-Mumbi Mundia-Howe
+Mumbi Mundia-Howe (KC3YZE)
 375 N Wade Ave
 Washington, PA 15301
 
-Samuel L. Mattei
+Samuel L. Mattei (KC3YZM)
 204 Grandview Dr
 Canonsburg, PA 15317
 
-Garrett Miller
+Garrett Miller (KC3ZBL)
 300 Mallard Drive
 Bridgeville, PA 15017
 
-Glenn G. Kinest
+Glenn G. Kinest (AC3ML)
 450 Parkridge Dr
 Bethel Park, PA 15102
 
-Dennis C. Collins
+Dennis C. Collins (KC3ZCM)
 10050 Central Ave
 Irwin, PA 15642
 
-Jeremy Lacomis
+Jeremy Lacomis (KC3ZCR)
 4556 WINTERBURN AVE
 Pittsburgh, PA 15207
 
-Richard Knupp
+Richard Knupp (KC3ZCS)
 308 Summit Way
 Clairton, PA 15025
 
-William T. Soule
+William T. Soule (KC3ZCU)
 2091 Wilcox Circle
 Murrysville, PA 15668
 
-William H. Straughn
+William H. Straughn (KC3ZDR)
 3300 Daniel Ln Apt 367
 Monroeville, PA 15146
 
-Vincent E. Jackson
+Vincent E. Jackson (KC3ZFJ)
 1462 McFarland Rd
 Pittsburg, PA 15216
 
-Fred J. Stowitzky
+Fred J. Stowitzky (KC3ZGS)
 4616 Northridge Ct
 Murrysville, PA 15668
 
-CHARLES S. ASHBY
+CHARLES S. ASHBY (AC3MO)
 1724 Days Run Road
 TARENTUM, PA 15084
 
-Ted A. Self
+Ted A. Self (KC3ZHR)
 3890 School Rd
 Murrysville, PA 15668
 
-Nelson L. Griesheimer
+Nelson L. Griesheimer (KC3ZIM)
 3326 Tarr Hollow Rd
 Murrysville, PA 15668
 
-Lloyd Fernandez
+Lloyd Fernandez (KC3ZIO)
 509 Henry St
 Belle Vernon, PA 15012
 
-Jeffrey P. Monaco
+Jeffrey P. Monaco (KC3ZIX)
 111 Penn Woods Ct
 Irwin, PA 15642
 
-Anuj Shah
+Anuj Shah (KC3ZJB)
 359 Carmell Dr
 Pittsburgh, PA 15241
 
-Jeremy Scaccia
+Jeremy Scaccia (KC3ZJG)
 122 E Pittsburgh St
 Burgettstown, PA 15021
 
-Alexander R. Stepko
+Alexander R. Stepko (KC3ZKH)
 136 Tanglewood Dr
 Wexford, PA 15090
 
-Ryan T. Vett
+Ryan T. Vett (KC3ZLB)
 5271 W WINDHAVEN RD
 PITTSBURGH, PA 15205
 
-Joseph F. Reichard
+Joseph F. Reichard (KC3ZPF)
 5160 Orchard Ave
 Bethel Park, PA 15102
 
-Tyler J. Cubarney
+Tyler J. Cubarney (KC3ZPX)
 3023 Salisbury Ct
 Wexford, PA 15090
 
-Jared Riley
+Jared Riley (KC3ZRX)
 3533 Huntertown Rd
 Allison Park, PA 15101
 
-Hunter J. Maughan
+Hunter J. Maughan (KC3ZSF)
 1033 Government Rd
 Irwin, PA 15642
 
-James A. Patterson
+James A. Patterson (AC3NA)
 PO Box #57
 Claridge, PA 15623
 
-Levi K. Cerra
+Levi K. Cerra (KC3ZSY)
 PO Box #9712
 Pittsburgh, PA 15229
 
-Bruce E. Steffine
+Bruce E. Steffine (KC3ZTF)
 312 Ridge Rd
 Ambridge, PA 15003
 
-Moises Montalvo
+Moises Montalvo (KC3ZUU)
 2605 Village Rd
 Pittsburgh, PA 15205
 
-William J. Pascale
+William J. Pascale (KC3ZUZ)
 209 Mckinley Ave
 Pittsburgh, PA 15202
 
-Michael C. Packard
+Michael C. Packard (KC3ZVC)
 714 Sylvan Ave
 Pittsburgh, PA 15202
 
-James R. Miller
+James R. Miller (AC3NG)
 1660 Mcelree Rd
 Washington, PA 15301
 
-Zachary Allen
+Zachary Allen (KC3ZWQ)
 181 Paul St
 Washington, PA 15301
 
-John C. Bosnyak
+John C. Bosnyak (KC3ZXF)
 5600 Fifth Ave Apt 209
 Pittsburgh, PA 15213
 
-Douglas P. Guerra
+Douglas P. Guerra (KC3ZYG)
 2103 Carolina Ave
 West Mifflin, PA 15122
 
-Lanqi Sun
+Lanqi Sun (KC3ZZH)
 3333 Forbes Ave Ave Apt 435
 Pittsburgh, PA 15213
 
-Brady R. Lippert
+Brady R. Lippert (KC3ZZY)
 2845 Thor Drive
 Lower Burrell, PA 15068
 
-Matthew R. Cipriani
+Matthew R. Cipriani (KD3AAI)
 321 Haugh Dr
 Pittsburgh, PA 15237
 
-Alvin W. Heyl
+Alvin W. Heyl (KD3AAW)
 100 Adams Dr Apt 203
 McKees Rocks, PA 15136
 
-James Gruss
+James Gruss (KD3ABX)
 186 42nd St
 Pittsburgh, PA 15201
 
-ROBERT K. MATCUK
+ROBERT K. MATCUK (KD3ACD)
 3631 Logan Ferry Rd
 Murrysville, PA 15668
 
-Gregory M. Billy
+Gregory M. Billy (KD3ADE)
 1333 Squirrel Hill Ave
 Pittsburgh, PA 15217
 
-Matthew O. Cartier
+Matthew O. Cartier (KD3ADK)
 848 Monteiro St
 Pittsburgh, PA 15217
 
-Adamo Mosca
+Adamo Mosca (KD3AEE)
 457 Fountain St
 Pittsburgh, PA 15238
 
-Seth Ross
+Seth Ross (KD3AET)
 4419 Garvers Ferry Rd
 Lower Burrell, PA 15068
 
-Paul A. Love
+Paul A. Love (KD3AGB)
 1240 Success St
 Pittsburgh, PA 15212
 
-Cullen Andrew Bennett
+Cullen Andrew Bennett (KD3AHA)
 502 Armandale St
 Pittsburgh, PA 15212
 
-James W. Ashbaucher
+James W. Ashbaucher (KD3AHG)
 3000 Village Run Rd Box 103 257
 Wexford, PA 15090
 
-Logan N. Hollowood
+Logan N. Hollowood (KD3AHO)
 78 Huffman Ave
 Washington, PA 15301
 
-Ralph R. Riberich
+Ralph R. Riberich (KD3AHW)
 309 Hedgerow Dr
 Venetia, PA 15367
 
-Ronald J. Baillie
+Ronald J. Baillie (KD3AIJ)
 213 Corey Dr
 Gibsonia, PA 15044
 
-McKenzie Roman
+McKenzie Roman (KD3AIM)
 1011 Mayfair Dr
 Canonsburg, PA 15317
 
-Richard W. Smith
+Richard W. Smith (KD3AJC)
 782 Sugar Run
 Eighty Four, PA 15330
 
-Timothy J. Halloran
+Timothy J. Halloran (KD3AJE)
 2397 Mill Grove Rd
 Pittsburgh, PA 15241
 
-Dennis Snyder
+Dennis Snyder (KD3AJI)
 912 Session St
 Pittsburgh, PA 15207
 

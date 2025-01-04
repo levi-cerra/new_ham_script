@@ -1,10 +1,13 @@
 # Reads the FCC database files and puts them into a list of list for each file
 from datetime import datetime as dt
 
-# Inputs for the code
-cutoff_date = '01/01/2024'
-zipcode_file = 'zipcode_files\zips_carnegie_25_miles.txt'
-
+# Read input file
+with open('inputs.txt', 'r') as file:
+    for index, line in enumerate(file):
+        if index == 0:
+            cutoff_date = line.strip()
+        elif index == 1:
+            zipcode_file = 'zipcode_files\\' + line.strip()
 
 
 def parse_file_line_data(current_line):
@@ -102,10 +105,11 @@ with open(address_output_file, 'w') as f:
             first = line[8]
             middle = line[9]
             last = line[10]
+            callsign = line[4]
             if middle == '':
-                full_name = first + ' ' + last
+                full_name = first + ' ' + last + ' (' + callsign + ')'
             else:
-                full_name = first + ' ' + middle + '. ' + last
+                full_name = first + ' ' + middle + '. ' + last + ' (' + callsign + ')'
             address_line = line[15]
             PO_box_num = line[19]
             if address_line == '':
