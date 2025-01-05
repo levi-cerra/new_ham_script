@@ -38,7 +38,7 @@ with open(file_path, 'r') as file:
     for line in file:
         current_line = line.strip()
         line_data_list = parse_file_line_data(current_line)
-        if line_data_list[18] in zip_list:
+        if line_data_list[18] in zip_list and (len(line_data_list[4]) == 6): # The second criteria was added to only get first time licensees and not vanity
             EN_list.append(line_data_list)
 
 
@@ -57,7 +57,7 @@ with open(file_path, 'r') as file:
         line_data_list = parse_file_line_data(current_line)
         i = i + 1
         a = dt.strptime(line_data_list[4], '%m/%d/%Y')
-        if line_data_list[5] == 'SYSGRT' and a >= b:
+        if line_data_list[5] == 'SYSGRT' and a >= b and (len(line_data_list[3]) == 6): # The second criteria was added to only get first time licensees and not vanity
             HS_list.append(line_data_list)
 
 print()

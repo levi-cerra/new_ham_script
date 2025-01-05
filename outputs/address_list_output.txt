@@ -1,5 +1,5 @@
 Address List Output File
-Number of Results from Query: 194
+Number of Results from Query: 180
 -----------------------------------
 
 Spencer Greenholt (KC3YHD)
@@ -158,21 +158,9 @@ Kevin A. Wright (KC3YXD)
 825 Peach Alley
 Glassport, PA 15045
 
-Jacob M. Joseph (AC3LY)
-5000 Forbes Ave
-Pittsburgh, PA 15213
-
-Brian Gonzalez (AC3MD)
-201 Pinecrest Dr
-Pittsburgh, PA 15237
-
 Mark A. Sebeck (KC3YYF)
 245 Allegheny Ave
 Emsworth, PA 15202
-
-David G. Andersen (AC3ME)
-5000 Forbes Ave Gates Center For CS
-Pittsburgh, PA 15213
 
 Mumbi Mundia-Howe (KC3YZE)
 375 N Wade Ave
@@ -185,10 +173,6 @@ Canonsburg, PA 15317
 Garrett Miller (KC3ZBL)
 300 Mallard Drive
 Bridgeville, PA 15017
-
-Glenn G. Kinest (AC3ML)
-450 Parkridge Dr
-Bethel Park, PA 15102
 
 Dennis C. Collins (KC3ZCM)
 10050 Central Ave
@@ -217,10 +201,6 @@ Pittsburg, PA 15216
 Fred J. Stowitzky (KC3ZGS)
 4616 Northridge Ct
 Murrysville, PA 15668
-
-CHARLES S. ASHBY (AC3MO)
-1724 Days Run Road
-TARENTUM, PA 15084
 
 Ted A. Self (KC3ZHR)
 3890 School Rd
@@ -270,10 +250,6 @@ Hunter J. Maughan (KC3ZSF)
 1033 Government Rd
 Irwin, PA 15642
 
-James A. Patterson (AC3NA)
-PO Box #57
-Claridge, PA 15623
-
 Levi K. Cerra (KC3ZSY)
 PO Box #9712
 Pittsburgh, PA 15229
@@ -293,10 +269,6 @@ Pittsburgh, PA 15202
 Michael C. Packard (KC3ZVC)
 714 Sylvan Ave
 Pittsburgh, PA 15202
-
-James R. Miller (AC3NG)
-1660 Mcelree Rd
-Washington, PA 15301
 
 Zachary Allen (KC3ZWQ)
 181 Paul St
