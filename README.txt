@@ -51,11 +51,3 @@ Running Instructions:
 Feel free to let me know if you run into any issues or if you need help running the code. I'd be happy to fix any
 bugs or look into improvements you might need to make it work for your purposes.
 
-
-
-
-Misc. Notes: 
-The EN and the HS seem to be the ones that I will focus on to get the data I need
-
-EN -> Names and Addresses (for searching zipcodes)
-HS -> Application/License History (for searching what date they got their license)
