@@ -149,7 +149,7 @@ print('Writing addresses to ' + address_csv_output_file)
 counter3 = 0
 with open(address_csv_output_file, 'w') as f:
     # Header
-    f.write(f"Name,Address,City,State,Zip\n")
+    f.write(f"Name,Callsign,Address,City,State,Zip\n")
     #Addresses
     for line in final_list:
         counter3 = counter3 + 1
@@ -159,9 +159,9 @@ with open(address_csv_output_file, 'w') as f:
             last = line[10]
             callsign = line[4]
             if middle == '':
-                full_name = first + ' ' + last + ' (' + callsign + ')'
+                full_name = first + ' ' + last
             else:
-                full_name = first + ' ' + middle + '. ' + last + ' (' + callsign + ')'
+                full_name = first + ' ' + middle + '. ' + last
             address_line = line[15]
             PO_box_num = line[19]
             if address_line == '':
@@ -169,7 +169,7 @@ with open(address_csv_output_file, 'w') as f:
             city = line[16]
             state = line[17]
             zip_code = line[18]
-            f.write(f"{full_name},{address_line},{city},{state},{zip_code}\n")
+            f.write(f"{full_name},{callsign},{address_line},{city},{state},{zip_code}\n")
 
 
 print()
