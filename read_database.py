@@ -10,6 +10,7 @@ with open('inputs.txt', 'r') as file:
             zipcode_file = 'zipcode_files\\' + line.strip()
 
 
+# Used by the EN and HS reading loops to read the data in
 def parse_file_line_data(current_line):
     line_data_list = []
     data = ''
@@ -21,6 +22,12 @@ def parse_file_line_data(current_line):
             data = data + current_char
     return line_data_list
 
+# Progress bar to print to the command line
+def progress_bar(progress, total):
+    percent = (progress / float(total)) * 100
+    bar = '#' * int(percent/2) + '-' * (50 - int(percent/2))
+    print(f"\r|{bar}| {percent:.1f}%", end="\r")
+
 
 # Read zip code file in as list
 print('Reading: ' + zipcode_file)
@@ -28,6 +35,15 @@ zip_list = []
 with open(zipcode_file, 'r') as file:
     for line in file:
         zip_list.append(line.strip())
+
+
+# Column numbers that correspond to the data (information to help read code)
+# EN
+# 0 - EN, 1 - ID, 2 - blank, 3 - blank, 4 - Callsign, 5 - unknown, 6 - unknown, 7 - Full Name, 8 - First Name, 9 - MI, 10 - Last Name, 11 through 14 - blank,
+# 15 - Address, 16 - City, 17 - State, 18 - Zip Code, 19 - PO Box Number, 20 - blank, 21 through 23 - unknown, 24 through 28 - blank
+
+# HS
+# 0 - HS, 1 - ID, 2 - blank, 3 - Callsign, 4 - Date, 5 - Type of Action Taken
 
 # Read the EN.dat file into a list of lists
 file_path = 'database_files\EN.dat'
@@ -60,10 +76,12 @@ with open(file_path, 'r') as file:
         if line_data_list[5] == 'SYSGRT' and a >= b and (len(line_data_list[3]) == 6): # The second criteria was added to only get first time licensees and not vanity
             HS_list.append(line_data_list)
 
+
 print()
 print('Compiling Final List of Hams')
 final_list = []
-for HS_people in HS_list:
+for prog, HS_people in enumerate(HS_list):
+    progress_bar(prog + 1, len(HS_list))
     for EN_people in EN_list:
         if HS_people[1] in EN_people:
             final_list.append(HS_people)
@@ -71,6 +89,7 @@ for HS_people in HS_list:
 
 
 final_list_len = str(len(final_list))
+print()
 print()
 print('Final List Length: ' + final_list_len)
 
