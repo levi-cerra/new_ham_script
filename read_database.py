@@ -123,5 +123,35 @@ with open(address_output_file, 'w') as f:
             f.write(f"{csz}\n")
             f.write(f"\n")
 
+
+address_csv_output_file = 'outputs\\address_list_output_csv.csv'
+print()
+print('Writing addresses to ' + address_csv_output_file)
+counter3 = 0
+with open(address_csv_output_file, 'w') as f:
+    # Header
+    f.write(f"Name,Address,City,State,Zip\n")
+    #Addresses
+    for line in final_list:
+        counter3 = counter3 + 1
+        if (counter3 % 2) == 0:
+            first = line[8]
+            middle = line[9]
+            last = line[10]
+            callsign = line[4]
+            if middle == '':
+                full_name = first + ' ' + last + ' (' + callsign + ')'
+            else:
+                full_name = first + ' ' + middle + '. ' + last + ' (' + callsign + ')'
+            address_line = line[15]
+            PO_box_num = line[19]
+            if address_line == '':
+                address_line = 'PO Box #' + PO_box_num
+            city = line[16]
+            state = line[17]
+            zip_code = line[18]
+            f.write(f"{full_name},{address_line},{city},{state},{zip_code}\n")
+
+
 print()
 print('Process Complete')
