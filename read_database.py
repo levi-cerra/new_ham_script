@@ -1,6 +1,7 @@
 # Reads the FCC database files and puts them into a list of list for each file
 from datetime import datetime as dt
 
+
 # Read input file
 with open('inputs.txt', 'r') as file:
     for index, line in enumerate(file):
@@ -23,6 +24,7 @@ def parse_file_line_data(current_line):
         elif current_char != '|':
             data = data + current_char
     return line_data_list
+
 
 # Progress bar to print to the command line
 def progress_bar(progress, total):
@@ -59,6 +61,8 @@ with open(file_path, 'r') as file:
         if line_data_list[18] in zip_list and (len(line_data_list[4]) == 6): # The second criteria was added to only get first time licensees and not vanity
             EN_list.append(line_data_list)
 
+print("Number of hams granted initial license in specified area: " + str(len(EN_list)))
+
 
 # Read the HS.dat file into a list of lists
 file_path = 'database_files\HS.dat'
@@ -79,16 +83,30 @@ with open(file_path, 'r') as file:
         if line_data_list[5] == 'SYSGRT' and (current_date >= a) and (current_date <= b) and (len(line_data_list[3]) == 6): # The second criteria was added to only get first time licensees and not vanity
             HS_list.append(line_data_list)
 
+date_list_ham_num_str = "Number of hams granted initial license from " + start_date + " to " + end_date + ": " + str(len(HS_list))
+print(date_list_ham_num_str)
+
 
 print()
 print('Compiling Final List of Hams')
 final_list = []
-for prog, HS_people in enumerate(HS_list):
-    progress_bar(prog + 1, len(HS_list))
-    for EN_people in EN_list:
-        if HS_people[1] in EN_people:
-            final_list.append(HS_people)
-            final_list.append(EN_people)
+EN_length = len(EN_list)
+HS_length = len(HS_list)
+if HS_length > EN_length:
+    for prog, EN_people in enumerate(EN_list):
+        progress_bar(prog + 1, len(EN_list))
+        for HS_people in HS_list:
+            if EN_people[1] in HS_people:
+                final_list.append(HS_people)
+                final_list.append(EN_people)
+elif HS_length <= EN_length:
+    for prog, HS_people in enumerate(HS_list):
+        progress_bar(prog + 1, len(HS_list))
+        for EN_people in EN_list:
+            if HS_people[1] in EN_people:
+                final_list.append(HS_people)
+                final_list.append(EN_people)
+
 
 
 final_list_len = str(len(final_list))
