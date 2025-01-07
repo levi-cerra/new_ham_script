@@ -1,5 +1,6 @@
 # Reads the FCC database files and puts them into a list of list for each file
 from datetime import datetime as dt
+from pathlib import Path
 
 
 # Read input file
@@ -10,7 +11,8 @@ with open('inputs.txt', 'r') as file:
         elif index == 1:
             end_date = line.strip()
         elif index == 2:
-            zipcode_file = 'zipcode_files\\' + line.strip()
+            zipcode_file_path = Path('zipcode_files/')
+            zipcode_file = zipcode_file_path / line.strip()
 
 
 # Used by the EN and HS reading loops to read the data in
@@ -34,7 +36,7 @@ def progress_bar(progress, total):
 
 
 # Read zip code file in as list
-print('Reading: ' + zipcode_file)
+print('Reading: ' + str(zipcode_file))
 zip_list = []
 with open(zipcode_file, 'r') as file:
     for line in file:
@@ -50,11 +52,12 @@ with open(zipcode_file, 'r') as file:
 # 0 - HS, 1 - ID, 2 - blank, 3 - Callsign, 4 - Date, 5 - Type of Action Taken
 
 # Read the EN.dat file into a list of lists
-file_path = 'database_files\EN.dat'
+database_file_path = Path('database_files/')
+EN_file_path = database_file_path / "EN.dat"
 print()
-print('Reading: ' + file_path)
+print('Reading: ' + str(EN_file_path))
 EN_list = []
-with open(file_path, 'r') as file:
+with open(EN_file_path, 'r') as file:
     for line in file:
         current_line = line.strip()
         line_data_list = parse_file_line_data(current_line)
@@ -65,14 +68,14 @@ print("Number of hams granted initial license in specified area: " + str(len(EN_
 
 
 # Read the HS.dat file into a list of lists
-file_path = 'database_files\HS.dat'
+HS_file_path = database_file_path / "HS.dat"
 print()
-print('Reading: ' + file_path)
+print('Reading: ' + str(HS_file_path))
 HS_list = []
 a = dt.strptime(start_date, '%m/%d/%Y')
 b = dt.strptime(end_date, '%m/%d/%Y')
 i = 1
-with open(file_path, 'r') as file:
+with open(HS_file_path, 'r') as file:
     for line in file:
         current_line = line.strip()
         current_line = current_line + '|' # Needed to add make the parsing function work properly
@@ -115,9 +118,10 @@ print()
 print('Final List Length: ' + final_list_len)
 
 
-list_output_file = 'outputs\\results_list_output.txt'
+outputs_file_path = Path('outputs/')
+list_output_file = outputs_file_path / "results_list_output.txt"
 print()
-print('Writing list text to ' + list_output_file)
+print('Writing list text to ' + str(list_output_file))
 counter = 0
 with open(list_output_file, 'w') as f:
     for line in final_list:
@@ -127,9 +131,9 @@ with open(list_output_file, 'w') as f:
             f.write(f"\n")
 
 
-address_output_file = 'outputs\\address_list_output.txt'
+address_output_file = outputs_file_path / "address_list_output.txt"
 print()
-print('Writing addresses to ' + address_output_file)
+print('Writing addresses to ' + str(address_output_file))
 counter2 = 0
 with open(address_output_file, 'w') as f:
     # Header
@@ -166,9 +170,9 @@ with open(address_output_file, 'w') as f:
             f.write(f"\n")
 
 
-address_csv_output_file = 'outputs\\address_list_output_csv.csv'
+address_csv_output_file = outputs_file_path / "address_list_output_csv.csv"
 print()
-print('Writing addresses to ' + address_csv_output_file)
+print('Writing addresses to ' + str(address_csv_output_file))
 counter3 = 0
 with open(address_csv_output_file, 'w') as f:
     # Header
