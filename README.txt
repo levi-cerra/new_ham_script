@@ -15,7 +15,8 @@ mail an invitation to all new hams in their area that this program would output.
 
 Software needed:
 Python
-No external packages required, only uses the datetime module
+No external packages required, only uses the datetime and pathlib libraries
+Should be able to run on Windows, Mac, and Linux, but let me know if you run into any issues (Developed in windows)
 
 
 Running Instructions:
