@@ -33,15 +33,17 @@ Running Instructions:
 	b. Go to https://www.unitedstateszipcodes.org/zip-code-radius-map.php
 	c. Input the city and radius you desire
 	d. Copy and paste the returned list into a text file in the "zipcode_files\" folder
-	e. Change the second line of inputs.txt to the name of the zipcode list file
+	e. Change the third line of inputs.txt to the name of the zipcode list file
 		- The code will only read one zipcode list file at a time, you can keep multiple in that folder though
 
-3. Change the input date that the code will use to return all ham licenses granted after
-	a. Go to the inputs.txt file and change the first line to the desired date
-	b. Date must be in format MM/DD/YYYY
+3. Change the input dates to set the range that the code will use to return all ham licenses in that time frame
+	a. Go to the inputs.txt file and change the first line to the desired start date
+	b. Change the second line to the desired end date
+	c. Dates must be in format MM/DD/YYYY
 
 4. Run the python script
-	a. I have found that it takes about 3 minutes to run on my machine, but times may vary
+	a. I have found that it takes about 3 minutes to run on my machine for a years worth of hams, 
+	   but times may vary
 
 5. Retrieve Outputs
 	a. Go to "outputs\" folder and open address_list_output.txt to see the list of addresses

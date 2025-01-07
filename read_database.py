@@ -5,8 +5,10 @@ from datetime import datetime as dt
 with open('inputs.txt', 'r') as file:
     for index, line in enumerate(file):
         if index == 0:
-            cutoff_date = line.strip()
+            start_date = line.strip()
         elif index == 1:
+            end_date = line.strip()
+        elif index == 2:
             zipcode_file = 'zipcode_files\\' + line.strip()
 
 
@@ -63,7 +65,8 @@ file_path = 'database_files\HS.dat'
 print()
 print('Reading: ' + file_path)
 HS_list = []
-b = dt.strptime(cutoff_date, '%m/%d/%Y')
+a = dt.strptime(start_date, '%m/%d/%Y')
+b = dt.strptime(end_date, '%m/%d/%Y')
 i = 1
 with open(file_path, 'r') as file:
     for line in file:
@@ -72,8 +75,8 @@ with open(file_path, 'r') as file:
         #print(current_line)
         line_data_list = parse_file_line_data(current_line)
         i = i + 1
-        a = dt.strptime(line_data_list[4], '%m/%d/%Y')
-        if line_data_list[5] == 'SYSGRT' and a >= b and (len(line_data_list[3]) == 6): # The second criteria was added to only get first time licensees and not vanity
+        current_date = dt.strptime(line_data_list[4], '%m/%d/%Y')
+        if line_data_list[5] == 'SYSGRT' and (current_date >= a) and (current_date <= b) and (len(line_data_list[3]) == 6): # The second criteria was added to only get first time licensees and not vanity
             HS_list.append(line_data_list)
 
 
@@ -113,7 +116,9 @@ counter2 = 0
 with open(address_output_file, 'w') as f:
     # Header
     num_of_results_str = "Number of Results from Query: " + final_list_len
+    date_range_string = "From " + start_date + " to " + end_date
     f.write(f"Address List Output File\n")
+    f.write(f"{date_range_string}\n")
     f.write(f"{num_of_results_str}\n")
     f.write(f"-----------------------------------\n")
     f.write(f"\n")
