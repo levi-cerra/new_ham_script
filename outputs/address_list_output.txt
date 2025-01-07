@@ -1,6 +1,6 @@
 Address List Output File
-From 01/01/2024 to 01/01/2025
-Number of Results from Query: 180
+From 01/01/2024 to 01/07/2025
+Number of Results from Query: 182
 -----------------------------------
 
 Spencer Greenholt (KC3YHD)
@@ -362,4 +362,8 @@ Pittsburgh, PA 15241
 Dennis Snyder (KD3AJI)
 912 Session St
 Pittsburgh, PA 15207
+
+Richard P. Horsman (KD3AJT)
+207 Ashton Ct
+Pittsburgh, PA 15202
 

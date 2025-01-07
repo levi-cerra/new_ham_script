@@ -2,7 +2,6 @@
 from datetime import datetime as dt
 from pathlib import Path
 
-
 # Read input file
 with open('inputs.txt', 'r') as file:
     for index, line in enumerate(file):
@@ -10,6 +9,11 @@ with open('inputs.txt', 'r') as file:
             start_date = line.strip()
         elif index == 1:
             end_date = line.strip()
+            if end_date == "today":
+                end_date = str(dt.today().date().strftime("%m/%d/%Y"))
+                b = dt.strptime(end_date, '%m/%d/%Y')
+            else:
+                b = dt.strptime(end_date, '%m/%d/%Y')
         elif index == 2:
             zipcode_file_path = Path('zipcode_files/')
             zipcode_file = zipcode_file_path / line.strip()
@@ -73,13 +77,11 @@ print()
 print('Reading: ' + str(HS_file_path))
 HS_list = []
 a = dt.strptime(start_date, '%m/%d/%Y')
-b = dt.strptime(end_date, '%m/%d/%Y')
 i = 1
 with open(HS_file_path, 'r') as file:
     for line in file:
         current_line = line.strip()
         current_line = current_line + '|' # Needed to add make the parsing function work properly
-        #print(current_line)
         line_data_list = parse_file_line_data(current_line)
         i = i + 1
         current_date = dt.strptime(line_data_list[4], '%m/%d/%Y')

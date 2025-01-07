@@ -40,6 +40,7 @@ Running Instructions:
 3. Change the input dates to set the range that the code will use to return all ham licenses in that time frame
 	a. Go to the inputs.txt file and change the first line to the desired start date
 	b. Change the second line to the desired end date
+		- You can also write "today" in this line and it will automatically use today's date
 	c. Dates must be in format MM/DD/YYYY
 
 4. Run the python script
