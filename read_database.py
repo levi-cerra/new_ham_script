@@ -114,7 +114,7 @@ elif HS_length <= EN_length:
 
 
 
-final_list_len = str(len(final_list))
+final_list_len = str(int(len(final_list)/2))
 print()
 print()
 print('Final List Length: ' + final_list_len)

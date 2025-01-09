@@ -44,12 +44,22 @@ Running Instructions:
 	c. Dates must be in format MM/DD/YYYY
 
 4. Run the python script
-	a. I have found that it takes about 3 minutes to run on my machine for a years worth of hams, 
-	   but times may vary
+	a. I have found that it takes about 3 minutes when searching for a years worth of hams, but times may 
+	   vary depending on your machine
 
 5. Retrieve Outputs
-	a. Go to "outputs\" folder and open address_list_output.txt to see the list of addresses
-	b. results_list_output.txt has all the raw data from the database for all returned hams
+	a. Go to "outputs\" folder and open address_list_output.txt to see the list of addresses (easily readable)
+	b. The address_list_output_csv.csv files is the same information as the address_list_output.txt but
+	   can be fed read by a spreadsheet for easier use
+		- I have created a google apps script that automatically populates a post card template with the
+		  address information. If you are interested in that, I could publish it as well. There are also
+		  other options and tools available (some cost money) that would work for automating that process
+		  as well.
+	c. results_list_output.txt has all the raw data from the database for all returned hams
+		- Less useful, was more needed when writing the code
+
+
+I hope this program can be used by those who need it. Hopefully it can help bring more people to your ham radio club!
 
 
 Feel free to let me know if you run into any issues or if you need help running the code. I'd be happy to fix any

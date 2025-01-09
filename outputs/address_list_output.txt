@@ -1,6 +1,6 @@
 Address List Output File
-From 01/01/2024 to 01/07/2025
-Number of Results from Query: 182
+From 01/01/2024 to 01/08/2025
+Number of Results from Query: 91
 -----------------------------------
 
 Spencer Greenholt (KC3YHD)
