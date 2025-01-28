@@ -19,6 +19,7 @@ No external packages required, only uses the datetime and pathlib libraries
 Should be able to run on Windows, Mac, and Linux, but let me know if you run into any issues (Developed in windows)
 
 
+
 Running Instructions:
 
 1. Get updated data from the FCC 
@@ -57,6 +58,40 @@ Running Instructions:
 		  as well.
 	c. results_list_output.txt has all the raw data from the database for all returned hams
 		- Less useful, was more needed when writing the code
+
+
+
+File Descriptions:
+outputs/address_list_output.txt
+  - plain text files of the output
+	- lists date range and number of hams found in addition to the address list
+
+outputs/address_list_output_csv.csv
+  - outputs in csv format, can be opened in excel or google sheets to automate postcard making
+
+outputs/results_list.txt
+  - Used during development
+
+database_files/
+  - must be made locally and populated with the EN.dat and HS.dat files
+	- files were too big to be uploaded, but they're not too unwieldy on a personal computer
+
+zipcode_files/
+  - example zip code list files used during testing located here
+	- put your desired zip code list file in here and make sure to write the name in the input file
+
+inputs.txt
+  - input file
+	- line 1: start date of query (currently 01/01/2024)
+	- line 2: end start date of query in same format (or put "today" and it will automaticlly use today's date)
+	- line 3: name of zip code list file you made (currently zips_carnegie_25_miles.txt)
+
+read_database.py
+  - Main script python script
+
+README.txt
+
+
 
 
 I hope this program can be used by those who need it. Hopefully it can help bring more people to your ham radio club!
